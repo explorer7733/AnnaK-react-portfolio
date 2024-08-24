@@ -3,6 +3,13 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  
+/* CSS variables */
+  --dark-blue: #07131e;
+  --aqua:#53EFE9;
+  --white: white;
+  --cambria: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  --italic: italic;
 }
 
 .logo {
@@ -17,6 +24,15 @@
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
+
+/* CSS for Footer.jsx */
+footer {
+  background-color: var(--aqua);
+}
+.container ul li a {
+  color: var(--dark-blue);
+}
+
 
 @keyframes logo-spin {
   from {
