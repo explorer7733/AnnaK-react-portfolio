@@ -3,10 +3,10 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  
-/* CSS variables */
+
+  /* CSS variables */
   --dark-blue: #07131e;
-  --aqua:#53EFE9;
+  --aqua: #53EFE9;
   --white: white;
   --cambria: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   --italic: italic;
@@ -18,17 +18,65 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+
+/* CSS for body */
+body {
+  background-color: var(--dark-blue);
+}
+
+/* CSS for Header.jsx */
+header {
+  font-family: var(--cambria);
+  color: var(--aqua);
+}
+
+.header h2 {
+  display: inline-block;
+  font-size: 30px;
+  font-style: var(--italic);
+  color: var(--aqua);
+}
+
+.header nav {
+  padding-top: 15px;
+  margin-right: 90px;
+  float: right;
+  font-family: var(--cambria);
+  font-size: 17px;
+}
+
+.header nav ul {
+  list-style-type: none;
+}
+
+.header nav ul li {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+a {
+  color: var(--aqua);
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--white);
 }
 
 /* CSS for Footer.jsx */
 footer {
   background-color: var(--aqua);
 }
+
 .container ul li a {
   color: var(--dark-blue);
 }
@@ -38,6 +86,7 @@ footer {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
