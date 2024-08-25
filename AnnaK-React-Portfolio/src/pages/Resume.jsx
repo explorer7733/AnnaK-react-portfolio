@@ -2,9 +2,9 @@ function Resume() {
     return (
         <div>
             <h1>Resume</h1>
-            <p>Here is my resume</p>
+            <p>Insert link to my resume</p>
             <div className="frontEndSkills">
-                <h2>Front-end Skills</h2>
+                <h2>Front-end skills:</h2>
                 <ul>
                     <li>HTML</li>
                     <li>CSS</li>
@@ -14,7 +14,7 @@ function Resume() {
                 </ul>
             </div>
             <div className="backEndSkills">
-                <h3>Back-end Skills</h3>
+                <h3>Back-end skills:</h3>
                 <ul>
                     <li>Node.js</li>
                     <li>Express</li>

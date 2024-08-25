@@ -72,6 +72,46 @@ nav a:hover {
   color: var(--white);
 }
 
+/* CSS for Projects*/
+.project-card {
+  width: 300px;
+  padding: 15px;
+  border: 1px solid var(--aqua);
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 4px 8px var(--aqua);
+  position: relative;
+}
+
+.project-title {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  color: var(--dark-blue);
+  text-decoration: none;
+  font-family: var(--cambria);
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.repo-link {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  color: var(--dark-blue);
+  text-decoration: none;
+}
+
+.repo-link:hover {
+  color: var(--aqua);
+}
+
+
+
 /* CSS for Footer.jsx */
 footer {
   background-color: var(--aqua);

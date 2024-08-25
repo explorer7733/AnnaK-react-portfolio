@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import Project from './components/Project'
 import Aboutme from './pages/Aboutme'
 import Portfolio from './pages/Portfolio'
 import Contact from './pages/Contact'
