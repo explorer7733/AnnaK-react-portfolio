@@ -1,4 +1,3 @@
-
 import personalPhoto from './assets/personal-photo.jpg'
  function Aboutme() {
     return (
