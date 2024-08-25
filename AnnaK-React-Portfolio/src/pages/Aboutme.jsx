@@ -1,4 +1,4 @@
-import personalPhoto from './assets/personal-photo.jpg'
+import personalPhoto from '../assets/personal-photo.jpg'
  function Aboutme() {
     return (
         <div>

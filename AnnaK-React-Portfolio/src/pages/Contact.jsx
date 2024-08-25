@@ -50,6 +50,7 @@ const Contact = () => {
                         id="name"
                         value={name}
                         onChange={(e) => setName(e.target.value)}
+                        onBlur={handleSubmit}
                     />
                     {errors.name && <span className="error">{errors.name}</span>}
                 </div>
@@ -60,8 +61,20 @@ const Contact = () => {
                         id="email"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
+                        onBlur={handleSubmit}
                     />
                     {errors.email && <span className="error">{errors.email}</span>}
+                </div>
+                <div className="form-group">
+                    <label htmlFor="message">Message</label>
+                    <input
+                        type="text"
+                        id="message"
+                        value={message}
+                        onChange={(e) => setMessage(e.target.value)}
+                        onBlur={handleSubmit}
+                    />
+                    {errors.message && <span className="error">{errors.message}</span>}
                 </div>
 
                 <button type="submit">Submit</button>

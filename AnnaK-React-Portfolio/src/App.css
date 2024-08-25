@@ -1,8 +1,8 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  padding: 0;
+
 
   /* CSS variables */
   --dark-blue: #07131e;
@@ -12,31 +12,29 @@
   --italic: italic;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-
 /* CSS for body */
 body {
   background-color: var(--dark-blue);
+  margin: 0;
+  padding: 0;
+ height: 100%;
 }
+
+
 
 /* CSS for Header.jsx */
 header {
   font-family: var(--cambria);
   color: var(--aqua);
+  background-color: var(--dark-blue);
+  padding: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+ position: relative;
+ 
+  width: 100%;
+
+
 }
 
 .header h2 {
@@ -52,6 +50,7 @@ header {
   float: right;
   font-family: var(--cambria);
   font-size: 17px;
+
 }
 
 .header nav ul {
@@ -64,12 +63,23 @@ header {
 }
 
 a {
-  color: var(--aqua);
+  color: var(--dark-blue);
   text-decoration: none;
 }
 
-nav a:hover {
-  color: var(--white);
+
+
+.photo {
+  width: 200px;
+
+}
+
+.nav-link a {
+  color: var(--aqua);
+}
+
+.nav-link a:hover {
+  color: var(--aqua);
 }
 
 /* CSS for Projects*/
@@ -81,6 +91,7 @@ nav a:hover {
   text-align: center;
   box-shadow: 0 4px 8px var(--aqua);
   position: relative;
+  background-color: var();
 }
 
 .project-title {
@@ -91,16 +102,20 @@ nav a:hover {
   font-family: var(--cambria);
 }
 
+.project-title:hover {
+  color: var(--aqua);
+}
+
 .project-image {
   width: 100%;
   height: auto;
   margin-bottom: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .repo-link {
   position: absolute;
-  bottom: 15px;
+  top: 30px;
   right: 15px;
   color: var(--dark-blue);
   text-decoration: none;
@@ -110,11 +125,28 @@ nav a:hover {
   color: var(--aqua);
 }
 
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
+/* CSS for Resume */
+.resume {
+  width: auto;
+  background-color: var(--dark-blue);
+  color: var(--aqua);
+  font: var(--cambria);
+  text-align: left;
+  margin-left: 50px;
+  min-width: 320px;
+
+}
 
 /* CSS for Footer.jsx */
 footer {
   background-color: var(--aqua);
+
 }
 
 .container ul li a {

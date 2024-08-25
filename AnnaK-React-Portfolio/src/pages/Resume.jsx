@@ -1,6 +1,6 @@
 function Resume() {
     return (
-        <div>
+        <div className="resume">
             <h1>Resume</h1>
             <p>Insert link to my resume</p>
             <div className="frontEndSkills">

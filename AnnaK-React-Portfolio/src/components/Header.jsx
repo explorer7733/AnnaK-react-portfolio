@@ -2,7 +2,7 @@ import Navbar from "./Navbar";
 
 function Header({setCurrentPage}) {
   return (
-    <header>
+    <header className="header">
       <h2>PORTFOLIO</h2>
         <Navbar setCurrentPage={setCurrentPage}/>
     </header>

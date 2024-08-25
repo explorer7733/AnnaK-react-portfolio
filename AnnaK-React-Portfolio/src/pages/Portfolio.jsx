@@ -1,10 +1,11 @@
-import Project from "./components/Project";
+import Project from "../components/Project";
+import AstroWhisper from "../assets/AstroWhisper app.png";
 
 const Portfolio = () => {
     const projects = [
         {
             title: "AstroWhisper App",
-            image: '/path/to/AstroWhisper app.png',
+            image: AstroWhisper,
             deployedLink: 'https://itswillynilly.github.io/Project-01-AstroWhisper/',
             repoLink: "https://github.com/itswillynilly/Project-01-AstroWhisper"
         },

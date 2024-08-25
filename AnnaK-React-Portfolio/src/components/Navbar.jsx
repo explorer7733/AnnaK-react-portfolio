@@ -2,16 +2,16 @@ function Navbar({setCurrentPage}) {
     return (
         <nav>
             <ul>
-                <li onClick={() => {
+                <li className="nav-link" onClick={() => {
                     setCurrentPage("About me")
                 }}><a href="#">About me</a></li>
-                <li onClick={() => {
+                <li className="nav-link" onClick={() => {
                     setCurrentPage("Portfolio")
                 }}><a href="#">Portfolio</a></li>
-                <li onClick={() => {
+                <li className="nav-link" onClick={() => {
                     setCurrentPage("Contact")
                 }}><a href="#">Contact</a></li>
-                <li onClick={() => {
+                <li className="nav-link" onClick={() => {
                     setCurrentPage("Resume")
                 }}><a href="#">Resume</a></li>
             </ul>
