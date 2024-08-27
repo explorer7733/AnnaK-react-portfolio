@@ -12,7 +12,6 @@
   --italic: italic;
 }
 
-
 /* CSS for body */
 html,
 body {
@@ -22,15 +21,12 @@ body {
   height: 100%;
 }
 
-
 /* CSS for Header.jsx */
 header {
   font-family: var(--cambria);
   color: var(--aqua);
   background-color: var(--dark-blue);
   padding: 20px;
-  /*margin-top: 20px;
-  margin-bottom: 10px;*/
   position: relative;
   width: 100%;
   box-sizing: border-box;
@@ -77,6 +73,32 @@ a {
   color: var(--white);
 }
 
+/* CSS for About me page */
+.aboutme {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  flex-grow: 1;
+  justify-content: center;
+  border-radius: 5px;
+  border: 1px solid var(--aqua);
+  background-color: var(--dark-blue);
+  color: var(--aqua);
+  font-family: var(--cambria);
+}
+
+/* CSS for Portfolio */
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 80vh;
+  flex-grow: 1;
+  justify-content: center;
+  border-radius: 5px;
+  border: 1px solid var(--aqua);
+  background-color: var(--dark-blue);
+}
+
 /* CSS for Projects*/
 .project-card {
   width: 300px;
@@ -97,6 +119,7 @@ a {
   color: var(--aqua);
   text-decoration: none;
   font-family: var(--cambria);
+  text-align: left;
 }
 
 .project-title:hover {
@@ -116,17 +139,27 @@ a {
   right: 15px;
   color: var(--aqua);
   text-decoration: none;
-  margin-right: 10px;
+  margin-right: 0;
 }
 
 .repo-link:hover {
   color: var(--white);
 }
 
-.portfolio {
+/* CSS for Contact */
+.contact-page {
+  background-color: var(--dark-blue);
+  color: var(--aqua);
+  text-align: left;
+  margin-left: 0;
+  min-width: 320px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  min-height: 100%;
+  flex-grow: 1;
+  border-radius: 5px;
+  border: 1px solid var(--aqua);
+  font-family: var(--cambria);
 }
 
 /* CSS for Resume */
@@ -134,10 +167,16 @@ a {
   width: auto;
   background-color: var(--dark-blue);
   color: var(--aqua);
-  font: var(--cambria);
   text-align: left;
   margin-left: 0;
   min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 137px);
+  flex-grow: 1;
+  border-radius: 5px;
+  border: 1px solid var(--aqua);
+  font-family: var(--cambria);
 }
 
 /* CSS for Footer.jsx */
@@ -147,10 +186,13 @@ footer {
   box-sizing: border-box;
   margin: 0;
   padding: 20px;
+  position: fixed;
+  bottom: 0;
 }
 
 .container ul li a {
   color: var(--dark-blue);
+ 
 }
 
 @keyframes logo-spin {

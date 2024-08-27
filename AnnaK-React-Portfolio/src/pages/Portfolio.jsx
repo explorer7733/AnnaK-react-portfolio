@@ -1,5 +1,7 @@
 import Project from "../components/Project";
 import AstroWhisper from "../assets/AstroWhisper app.png";
+import WhatchMyPetapp from "../assets/Whatch My Pet app.png";
+import PhotoBlog from "../assets/Street photography blog.png";
 
 const Portfolio = () => {
     const projects = [
@@ -11,7 +13,13 @@ const Portfolio = () => {
         },
         {
             title: "Watch My Pet App",
-            image: '/path/to/Watch My Pet App.png',
+            image: WhatchMyPetapp,
+            deployedLink: 'https://watch-my-pet.onrender.com/',
+            repoLink: 'https://github.com/tjmcd2010/Watch-My-Pet'
+        },
+        {
+            title: "Street Photography Blog",
+            image: PhotoBlog,
             deployedLink: 'https://watch-my-pet.onrender.com/',
             repoLink: 'https://github.com/tjmcd2010/Watch-My-Pet'
         }

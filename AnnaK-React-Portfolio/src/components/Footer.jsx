@@ -4,7 +4,7 @@ function Footer() {
         <footer>
             <div className="container">
                 <ul>
-                    <li><a href="https://github.com/explorer7733"><AiFillGithub /></a></li>
+                    <li><a href="https://github.com/explorer7733"><AiFillGithub size={40} /></a></li>
                 </ul>
             </div>
         </footer>

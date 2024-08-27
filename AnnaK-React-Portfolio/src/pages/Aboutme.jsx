@@ -1,7 +1,7 @@
 import personalPhoto from '../assets/personal-photo.jpg'
  function Aboutme() {
     return (
-        <div>
+        <div className="aboutme">
             <h1>About Me</h1>
             <div>
                 <img src={personalPhoto} alt="personal photo" className="photo" />
