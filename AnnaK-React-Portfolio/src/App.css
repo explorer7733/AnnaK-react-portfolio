@@ -44,7 +44,7 @@ header {
   margin-right: 0;
   float: right;
   font-family: var(--cambria);
-  font-size: 17px;
+  font-size: 22px;
 }
 
 .header nav ul {
@@ -53,7 +53,7 @@ header {
 
 .header nav ul li {
   display: inline-block;
-  margin-left: 25px;
+  margin-left: 40px;
 }
 
 a {
@@ -77,14 +77,35 @@ a {
 .aboutme {
   display: flex;
   flex-direction: column;
-  min-height: 100%;
   flex-grow: 1;
   justify-content: center;
-  border-radius: 5px;
   border: 1px solid var(--aqua);
   background-color: var(--dark-blue);
   color: var(--aqua);
   font-family: var(--cambria);
+  min-height: calc(100vh - 137px);
+}
+
+.titleAboutme {
+  font-size: 30px;
+  margin-left: 130px;
+  font-style: var(--italic);
+}
+
+.aboutme-content {
+  display: flex;
+  align-items: center;
+  margin-left: 100px;
+  margin-right: 50px;
+  margin-bottom: 160px;
+  font-size: 18px;
+}
+
+.photo {
+  justify-content: center;
+  border-radius: 5px;
+  box-shadow: 0 6px 10px var(--aqua);
+  margin-right: 100px;
 }
 
 /* CSS for Portfolio */
@@ -94,14 +115,14 @@ a {
   min-height: 80vh;
   flex-grow: 1;
   justify-content: center;
-  border-radius: 5px;
   border: 1px solid var(--aqua);
   background-color: var(--dark-blue);
 }
 
 /* CSS for Projects*/
 .project-card {
-  width: 300px;
+  width: 325px;
+  height: 250px;
   padding: 15px;
   border: 1px solid var(--aqua);
   border-radius: 5px;
@@ -110,11 +131,17 @@ a {
   position: relative;
   background-color: var(--dark-blue);
   color: var(--aqua);
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between; 
+  flex-wrap: wrap; 
 }
 
 .project-title {
   margin-bottom: 10px;
-  margin-top: 20px;
+  margin-top: 10px;
   font-size: 1.5em;
   color: var(--aqua);
   text-decoration: none;
@@ -135,7 +162,7 @@ a {
 
 .repo-link {
   position: absolute;
-  top: 40px;
+  top: 27px;
   right: 15px;
   color: var(--aqua);
   text-decoration: none;
@@ -155,11 +182,74 @@ a {
   min-width: 320px;
   display: flex;
   flex-direction: column;
-  min-height: 100%;
+  min-height: calc(100vh - 137px);
   flex-grow: 1;
-  border-radius: 5px;
   border: 1px solid var(--aqua);
   font-family: var(--cambria);
+  font-size: 18px;
+}
+
+.contactTitle {
+  font-size: 30px;
+  margin-left: 30px;
+  font-style: var(--italic);
+}
+
+.form-group {
+  margin-left: 30px;
+}
+
+.field {
+  width: 300px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid var(--aqua);
+  background-color: var(--dark-blue);
+  color: var(--aqua);
+  font-family: var(--cambria);
+  font-size: 18px;
+  box-shadow: 0 4px 8px var(--aqua);
+}
+
+.fieldMessage {
+  width: 300px;
+  height: 150px;
+  border-radius: 5px;
+  border: 1px solid var(--aqua);
+  background-color: var(--dark-blue);
+  color: var(--aqua);
+  font-family: var(--cambria);
+  font-size: 18px;
+  box-shadow: 0 4px 8px var(--aqua);
+}
+
+.submitButton {
+  margin-left: 30px;
+  margin-top: 15px;
+  background-color: var(--aqua);
+  color: var(--dark-blue);
+  font-family: var(--cambria);
+  font-size: 18px;
+  width: 300px;
+  height: 40px;
+}
+
+.submitButton:hover {
+  color: var(--white);
+}
+
+.contact-form .form-group {
+  margin-bottom: 15px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-form .error {
+  margin-left: 10px;
 }
 
 /* CSS for Resume */
@@ -174,9 +264,23 @@ a {
   flex-direction: column;
   min-height: calc(100vh - 137px);
   flex-grow: 1;
-  border-radius: 5px;
   border: 1px solid var(--aqua);
   font-family: var(--cambria);
+}
+
+.titleResume {
+  font-size: 30px;
+  margin-left: 30px;
+  font-style: var(--italic);
+}
+
+.headerSkills {
+  font-size: 20px;
+}
+
+.skills {
+  font-size: 18px;
+  margin-left: 30px;
 }
 
 /* CSS for Footer.jsx */
@@ -190,10 +294,26 @@ footer {
   bottom: 0;
 }
 
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  
+}
+.container ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
 .container ul li a {
   color: var(--dark-blue);
- 
 }
+
+.container ul li a:hover {
+  color: var(--white);
+}
+
 
 @keyframes logo-spin {
   from {

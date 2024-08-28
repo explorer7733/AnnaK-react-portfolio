@@ -41,11 +41,12 @@ const Contact = () => {
 
     return (
         <div className="contact-page">
-            <h1>Contact Us</h1>
+            <h1 className="contactTitle">Contact Me</h1>
             <form onSubmit={handleSubmit} className="contact-form">
                 <div className="form-group">
-                    <label htmlFor="name">Name</label>
+                    <label htmlFor="name">Name:</label>
                     <input
+                        className="field"
                         type="text"
                         id="name"
                         value={name}
@@ -55,8 +56,9 @@ const Contact = () => {
                     {errors.name && <span className="error">{errors.name}</span>}
                 </div>
                 <div className="form-group">
-                    <label htmlFor="email">Email Address</label>
+                    <label htmlFor="email">Email Address:</label>
                     <input
+                        className="field"
                         type="email"
                         id="email"
                         value={email}
@@ -66,8 +68,9 @@ const Contact = () => {
                     {errors.email && <span className="error">{errors.email}</span>}
                 </div>
                 <div className="form-group">
-                    <label htmlFor="message">Message</label>
+                    <label htmlFor="message">Message:</label>
                     <input
+                        className="fieldMessage"
                         type="text"
                         id="message"
                         value={message}
@@ -77,7 +80,7 @@ const Contact = () => {
                     {errors.message && <span className="error">{errors.message}</span>}
                 </div>
 
-                <button type="submit">Submit</button>
+                <button className="submitButton" type="submit">Submit</button>
             </form>
         </div>
     );
