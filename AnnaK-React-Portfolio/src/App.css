@@ -36,7 +36,7 @@ header {
   display: inline-block;
   font-size: 30px;
   font-style: var(--italic);
-  color: var(--aqua);
+  color: var(--aqua); 
 }
 
 .header nav {
@@ -274,14 +274,60 @@ a {
   font-style: var(--italic);
 }
 
-.headerSkills {
-  font-size: 20px;
+.skills-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  gap: 30px;
 }
 
 .skills {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.skills.back-end,
+.skills.soft-skills {
+  align-items: flex-start;
+}
+
+.divider {
+  width: 2px;
+  background-color: var(--aqua);
+  height: 100%;
+  position: absolute;
+}
+
+.skills-container .divider:nth-child(2) {
+  left: 33.33%;
+  transform: translateX(-50%);
+}
+
+.skills-container .divider:nth-child(4) {
+  left: 66.66%;
+  transform: translateX(-50%);
+}
+
+.headerSkills {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+/*.skills {
   font-size: 18px;
   margin-left: 30px;
-}
+}*/
 
 /* CSS for Footer.jsx */
 footer {
