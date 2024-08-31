@@ -16,7 +16,7 @@ function Resume() {
                         <li>MySQL</li>
                     </ul>
                 </div>
-                <div className="divider"></div>
+                {/* <div className="divider"></div> */}
                 <div className="skills back-end">
                     <h3 className="headerSkills">Back-end skills:</h3>
                     <ul>
@@ -29,7 +29,7 @@ function Resume() {
                         <li>Git/Github</li>
                     </ul>
                 </div>
-                <div className="divider"></div>
+                {/* <div className="divider"></div> */}
                 <div className="skills soft-skills">
                     <h3 className="headerSkills">Soft skills:</h3>
                     <ul>

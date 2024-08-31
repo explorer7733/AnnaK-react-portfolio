@@ -30,6 +30,7 @@ header {
   position: relative;
   width: 100%;
   box-sizing: border-box;
+  border: var(--aqua) 1px solid;
 }
 
 .header h2 {
@@ -120,9 +121,16 @@ a {
 }
 
 /* CSS for Projects*/
+.titleProjects {
+  color: var(--aqua);
+  font-family: var(--cambria);
+  font-size: 30px;
+  font-style: var(--italic);
+}
+
 .project-card {
   width: 325px;
-  height: 250px;
+  height: 270px;
   padding: 15px;
   border: 1px solid var(--aqua);
   border-radius: 5px;
@@ -133,10 +141,14 @@ a {
   color: var(--aqua);
   margin-top: 20px;
   margin-left: 20px;
-  margin-bottom: 20px;
-  display: flex;
+  margin-bottom: 10px;
+  /*display: flex;
   justify-content: space-between; 
-  flex-wrap: wrap; 
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: repeat(3);
+
+ 
 }
 
 .project-title {
@@ -272,6 +284,7 @@ a {
   font-size: 30px;
   margin-left: 30px;
   font-style: var(--italic);
+  text-align: center;
 }
 
 .skills-container {
@@ -289,7 +302,14 @@ a {
   align-items: flex-end;
 }
 
-.skills.back-end,
+.skills.back-end {
+  align-items: center;
+  min-width: 157px !important;
+  max-width: 173px !important;
+  border-left: 2px solid var(--aqua);
+  border-right: 2px solid var(--aqua);
+}
+
 .skills.soft-skills {
   align-items: flex-start;
 }
@@ -302,7 +322,7 @@ a {
 }
 
 .skills-container .divider:nth-child(2) {
-  left: 33.33%;
+  left: 33.33%
   transform: translateX(-50%);
 }
 
@@ -324,10 +344,7 @@ ul {
 li {
   margin-bottom: 5px;
 }
-/*.skills {
-  font-size: 18px;
-  margin-left: 30px;
-}*/
+
 
 /* CSS for Footer.jsx */
 footer {
@@ -335,7 +352,7 @@ footer {
   width: 100%;
   box-sizing: border-box;
   margin: 0;
-  padding: 20px;
+  padding: 10px;
   position: fixed;
   bottom: 0;
 }
@@ -348,6 +365,7 @@ footer {
 .container ul {
   list-style: none;
   display: flex;
+  align-items: center;
   gap: 20px;
   padding: 0;
   margin: 0;
@@ -360,6 +378,12 @@ footer {
   color: var(--white);
 }
 
+.signature {
+  color: var(--dark-blue);
+  font-size: 15px;
+  text-align: center;
+  font-family: var(--cambria);
+}
 
 @keyframes logo-spin {
   from {

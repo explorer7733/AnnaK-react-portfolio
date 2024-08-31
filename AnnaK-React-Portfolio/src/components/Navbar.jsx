@@ -7,7 +7,7 @@ function Navbar({setCurrentPage}) {
                 }}><a href="#">About me</a></li>
                 <li className="nav-link" onClick={() => {
                     setCurrentPage("Portfolio")
-                }}><a href="#">Portfolio</a></li>
+                }}><a href="#">Projects</a></li>
                 <li className="nav-link" onClick={() => {
                     setCurrentPage("Contact")
                 }}><a href="#">Contact</a></li>
