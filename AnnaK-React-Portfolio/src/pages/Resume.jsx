@@ -2,7 +2,7 @@ function Resume() {
     return (
         <div className="resume">
             <h1 className="titleResume">Resume</h1>
-            <p>Download my resume</p>
+            <a href="../assets/resume.pdf" download className="download-button">DOWNLOAD</a>
             <div className="skills-container">
                 <div className="skills front-end">
                     <h2 className="headerSkills">Front-end skills:</h2>

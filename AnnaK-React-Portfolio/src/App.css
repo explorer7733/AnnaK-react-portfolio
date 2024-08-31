@@ -244,6 +244,7 @@ a {
   font-size: 18px;
   width: 300px;
   height: 40px;
+  font-weight: bold;
 }
 
 .submitButton:hover {
@@ -285,8 +286,34 @@ a {
   margin-left: 30px;
   font-style: var(--italic);
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
+.download-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--aqua);
+  color: var(--dark-blue);
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 5px;
+  font-family: var(--cambria);
+  font-size: 15px;
+  width: 90px;
+  height: 20px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+ margin-bottom: 30px;
+}
+
+.download-button:hover {
+  color: var(--white);
+}
 .skills-container {
   display: flex;
   justify-content: center;
@@ -369,6 +396,8 @@ footer {
   gap: 20px;
   padding: 0;
   margin: 0;
+  margin-left: 20px;
+  
 }
 .container ul li a {
   color: var(--dark-blue);
@@ -383,6 +412,8 @@ footer {
   font-size: 15px;
   text-align: center;
   font-family: var(--cambria);
+  font-weight: bold;
+  margin-left: 500px;
 }
 
 @keyframes logo-spin {
