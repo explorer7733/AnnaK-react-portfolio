@@ -6,9 +6,14 @@ function Aboutme() {
             <div className="aboutme-content">
                 <img src={personalPhoto} alt="personal photo" className="photo" />
                 <div className="greeting">
-                    <h2 className="greetings">Hello, my name is <br><span className="name">Anna</span></br> and I'm a UI/UX designer/front-end developer with a passion for the web design.</h2>
+                    <h2 className="greetings">
+                        <div>Hello, my name is <span className="name">Anna </span></div>
+                        <div>and I am a  <span className="job">UI/UX designer </span> and front-end developer
+                        with a passion for building modern, responsive and user-friendly web applications.</div>
+                        <div>I delivery high-quality work that meets your goals and exceeds your expectations.</div>
+                    </h2>
                 </div>
-                <p className="statement">
+                <div className="statement">
                     <span>There </span>
                     <span>are </span>
                     <span>no </span>
@@ -27,7 +32,7 @@ function Aboutme() {
                     <span>your </span>
                     <span>own </span>
                     <span>thinking.</span>
-                </p>
+                </div>
             </div>
         </div>
     );

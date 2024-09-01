@@ -1,5 +1,5 @@
+/* Import fonts */
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
-
 @keyframes scale {
   100% {
     transform: scale(1);
@@ -82,6 +82,10 @@ a {
   color: var(--white);
 }
 
+.k {
+  color: var(--white);
+}
+
 /* CSS for About me page */
 .aboutme {
   display: flex;
@@ -107,7 +111,7 @@ a {
   margin-left: 100px;
   margin-right: 50px;
   margin-bottom: 160px;
-  font-size: 18px;
+  font-size: 1rem;
 }
 
 .photo {
@@ -115,19 +119,36 @@ a {
   border-radius: 5px;
   box-shadow: 0 6px 10px var(--aqua);
   margin-right: 100px;
+  width: 100%;
+  max-width: 200px;
+  margin-bottom: 20px;
 }
 
+.greetings {
+  font-size: 25px;
+}
 
+.name {
+  color: var(--white);
+  font-style: italic;
+  font-size: 35px;
+  margin-right: 10px;
+}
 
+.job {
+  color: var(--white);
+}
+/* CSS for statement */
 .statement {
   font-family: var(--cambria);
+  font-style: var(--italic);
+  color: var(--white);
   max-width: 40ch;
   text-align: center;
   transform: scale(0.94);
   animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+  font-size: 1.2rem;
 }
-
-
 
 .statement span {
   display: inline-block;
@@ -214,7 +235,6 @@ span:nth-child(8) {
     filter: blur(0);
   }
 }
-
 
 /* CSS for Portfolio */
 .portfolio {
@@ -474,7 +494,6 @@ li {
   margin-bottom: 5px;
 }
 
-
 /* CSS for Footer.jsx */
 footer {
   background-color: var(--aqua);
@@ -511,33 +530,53 @@ footer {
 
 .signature {
   color: var(--dark-blue);
-  font-size: 15px;
+  font-size: 1rem;
   text-align: center;
   font-family: var(--cambria);
   font-weight: bold;
   margin-left: 500px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Media Queries */
+@media (min-width: 768px) {
+  .aboutme-content {
+    flex-direction: row;
+    margin: 50px 100px;
   }
 
-  to {
-    transform: rotate(360deg);
+  .portfolio {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .skills-container {
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+  }
+  .skills {
+    max-width: none;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+@media (min-width: 1024px) {
+  .titleAboutme {
+    font-size: 2rem;
   }
-}
 
-.card {
-  padding: 2em;
-}
+  .greetings {
+    font-size: 1.5rem;
+  }
 
-.read-the-docs {
-  color: #888;
+  .statement {
+    font-size: 1.4rem;
+    max-width: 60ch;
+  }
+
+  .project-card {
+    width: 300px;
+  }
+  .resume .skills-container {
+    gap: 100px;
+  }
 }
