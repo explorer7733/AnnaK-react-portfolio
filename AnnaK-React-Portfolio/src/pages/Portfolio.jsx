@@ -46,9 +46,11 @@ const Portfolio = () => {
         }
 
     ];
-    return (         
+    return ( 
+        <div>
+        <h1 className="titleProjects">My Projects</h1>     
         <div className="portfolio">
-        <h1 className="titleProjects">My Projects</h1>
+        
             {projects.map((project, index) => (
                 <Project
                     key={index}
@@ -59,7 +61,7 @@ const Portfolio = () => {
                 />
             ))}
         </div>
-        
+        </div>  
     );
 };
 

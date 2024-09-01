@@ -39,6 +39,9 @@ header {
   width: 100%;
   box-sizing: border-box;
   border: var(--aqua) 1px solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .header h2 {
@@ -51,7 +54,7 @@ header {
 .header nav {
   padding-top: 15px;
   margin-right: 0;
-  float: right;
+  /* float: right; */
   font-family: var(--cambria);
   font-size: 22px;
 }
@@ -148,6 +151,7 @@ a {
   transform: scale(0.94);
   animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
   font-size: 1.2rem;
+  margin-left: 20px;
 }
 
 .statement span {
@@ -243,8 +247,9 @@ span:nth-child(8) {
   min-height: 80vh;
   flex-grow: 1;
   justify-content: center;
-  border: 1px solid var(--aqua);
+  /*border: 1px solid var(--aqua);*/
   background-color: var(--dark-blue);
+  padding-bottom: 80px;
 }
 
 /* CSS for Projects*/
@@ -253,6 +258,9 @@ span:nth-child(8) {
   font-family: var(--cambria);
   font-size: 30px;
   font-style: var(--italic);
+  background-color: var(--dark-blue);
+  margin: 0px;
+  text-align: center;
 }
 
 .project-card {
@@ -518,6 +526,8 @@ footer {
   padding: 0;
   margin: 0;
   margin-left: 20px;
+  justify-content: flex-start;
+  width: 100%;
   
 }
 .container ul li a {
@@ -534,15 +544,27 @@ footer {
   text-align: center;
   font-family: var(--cambria);
   font-weight: bold;
-  margin-left: 500px;
+  /* margin-left: 500px; */
+  position: absolute;
+  left: 43%;
 }
 
+
 /* Media Queries */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .aboutme-content {
-    flex-direction: row;
-    margin: 50px 100px;
+    flex-direction: column;
+  
   }
+
+  .aboutme {
+    flex-direction: column;
+  }
+
+  .statement {
+    margin-left: 0px;
+  }
+
 
   .portfolio {
     flex-direction: row;
@@ -558,6 +580,25 @@ footer {
     max-width: none;
   }
 }
+
+@media (max-width: 640px) {
+  .skills-container {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 80px;
+  }
+
+  .skills {
+    align-items: center !important;
+    text-align: center;
+  }
+
+  .skills.back-end {
+    border-left: none;
+    border-right: none;
+  }
+}
+
 
 @media (min-width: 1024px) {
   .titleAboutme {
