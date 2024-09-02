@@ -2,7 +2,7 @@
 
 ## Description
 
-My goal was to create a personal web portfolio with React and JavaScript, building a dynamic and interactive site that showcases home page, my projects, resume/skills, and contact information. 
+My objective was to develop a personal web portfolio using React and JavaScript, creating a dynamic and interactive platform that highlights my homepage, projects, resume/skills, and contact information. The application features a responsive design with customized CSS, ensuring a seamless experience across all devices.
 
 ## Installation
 
@@ -16,14 +16,16 @@ My goal was to create a personal web portfolio with React and JavaScript, buildi
 
 Access the application at http://localhost:5371
 
-## Link and Screenshot EDIT!!!!!!
+## Link and Screenshot 
 
 To review "AnnaK-react-portfolio", you can click on the link and see the screenshot below:
 
 [Deployed link](https://annak-text-editor.onrender.com/) 
 
-[_screenshot](./text_editor_screenshot.png)
-
+[aboutme_screenshot](./src/assets/appScreenshots/aboutme.png)
+[projects_screenshot](./src/assets/appScreenshots/projects.png)
+[contact_screenshot](./src/assets/appScreenshots/contact.png)
+[resume-screenshot](./src/assets/appScreenshots/resume.png)
 
 ## Credits
 

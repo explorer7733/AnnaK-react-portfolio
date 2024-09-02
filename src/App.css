@@ -54,7 +54,6 @@ header {
 .header nav {
   padding-top: 15px;
   margin-right: 0;
-  /* float: right; */
   font-family: var(--cambria);
   font-size: 22px;
 }
@@ -120,7 +119,7 @@ a {
 .photo {
   justify-content: center;
   border-radius: 5px;
-  box-shadow: 0 6px 10px var(--aqua);
+  box-shadow: 0 8px 20px var(--aqua);
   margin-right: 100px;
   width: 100%;
   max-width: 200px;
@@ -247,7 +246,6 @@ span:nth-child(8) {
   min-height: 80vh;
   flex-grow: 1;
   justify-content: center;
-  /*border: 1px solid var(--aqua);*/
   background-color: var(--dark-blue);
   padding-bottom: 80px;
 }
@@ -270,7 +268,7 @@ span:nth-child(8) {
   border: 1px solid var(--aqua);
   border-radius: 5px;
   text-align: center;
-  box-shadow: 0 4px 8px var(--aqua);
+  box-shadow: 0 6px 10px var(--aqua);
   position: relative;
   background-color: var(--dark-blue);
   color: var(--aqua);
@@ -504,7 +502,7 @@ li {
 
 /* CSS for Footer.jsx */
 footer {
-  background-color: var(--aqua);
+  background: linear-gradient(to bottom, var(--aqua) 0%, var(--aqua) 50%, var(--dark-blue) 100%);
   width: 100%;
   box-sizing: border-box;
   margin: 0;
@@ -517,7 +515,9 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;  
+
 }
+
 .container ul {
   list-style: none;
   display: flex;
@@ -544,17 +544,14 @@ footer {
   text-align: center;
   font-family: var(--cambria);
   font-weight: bold;
-  /* margin-left: 500px; */
   position: absolute;
   left: 43%;
 }
-
 
 /* Media Queries */
 @media (max-width: 768px) {
   .aboutme-content {
     flex-direction: column;
-  
   }
 
   .aboutme {
