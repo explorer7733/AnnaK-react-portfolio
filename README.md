@@ -20,7 +20,7 @@ Access the application at http://localhost:5371
 
 To review "AnnaK-react-portfolio", you can click on the link and see the screenshot below:
 
-[Deployed link](https://annak-text-editor.onrender.com/) 
+[Deployed link](https://golden-griffin-9d8d6f.netlify.app/) 
 
 [aboutme_screenshot](./src/assets/appScreenshots/aboutme.png)
 [projects_screenshot](./src/assets/appScreenshots/projects.png)
