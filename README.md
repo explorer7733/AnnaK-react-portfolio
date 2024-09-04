@@ -34,3 +34,5 @@ I followed the following resources:
 https://react.dev/
 https://vitejs.dev/
 https://wpdean.com/
+
+I trully appreciated C.Nguen's assistance in creating the "AK" favicon icon.
