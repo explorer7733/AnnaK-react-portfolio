@@ -7,7 +7,7 @@ My objective was to develop a personal web portfolio using React and JavaScript,
 ## Installation
 
 1. Use the command line to navigate the directory of the application
-2. Clone my repo to your computer: "git clone [insert the repo's link]"
+2. Clone my repo to your computer: "git clone git@github.com:explorer7733/AnnaK-react-portfolio.git"
 3. Access to the folder: "cd AnnaK-react-portfolio"
 4. Install some necessary packages: "npm install"
 5. Run the server: "npm run dev"
